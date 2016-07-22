@@ -3,7 +3,9 @@
 Cake.Figlet adds FIGlet font support to Cake allowing superfulous Ascii art to be added
 to your build scripts easily.
 
-[![screenshot](docs/cake.figlet.PNG)]
+![screenshot](docs/cake.figlet.PNG)
+
+[![Build status](https://ci.appveyor.com/api/projects/status/3l0xm56cpakmiu2c/branch/master?svg=true)](https://ci.appveyor.com/project/enkafan/cake-figlet/branch/master) [![NuGet version](https://badge.fury.io/nu/cake.figlet.svg)](https://www.nuget.org/packages/cake.figlet)
 
 ## Referencing
 
