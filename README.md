@@ -3,7 +3,7 @@
 Cake.Figlet adds FIGlet font support to Cake allowing superfulous Ascii art to be added
 to your build scripts easily.
 
-[![screenshot](docs/cake.figlet.png)]
+[![screenshot](docs/cake.figlet.PNG)]
 
 ## Referencing
 
