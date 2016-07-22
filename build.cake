@@ -1,9 +1,6 @@
 #tool "nuget:?package=GitVersion.CommandLine"
 #tool "xunit.runner.console"
 
-#r "src/Cake.Figlet/bin/Release/Cake.Figlet.dll"
-
-
 var target = Argument<string>("target", "build");
 var configuration = Argument<string>("configuration", "Release");
 
@@ -19,11 +16,6 @@ var testResultsPath = MakeAbsolute(Directory(artifacts + "./test-results"));
 
 var nugetVersion = "";
 var semVer = "";
-
-Setup(ctx => {
-    Information("");
-    Information(Figlet("Cake.Figlet"));
-});
 
 Task("clean")
     .Does(() => 
