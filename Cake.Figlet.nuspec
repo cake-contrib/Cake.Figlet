@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>Cake.Figlet</id>
+    <version>$version$</version>
+    <authors>Phil Scott</authors>
+    <owners>Phil Scott</owners>
+    <title>Cake.Figlet</title>
+    <description>Cake Build addon to provide Ascii art.</description>
+    <summary>Cake Build addon to provide Ascii art.</summary>
+    <licenseUrl>https://raw.githubusercontent.com/enkafan/Cake.Figlet/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/enkafan/Cake.Figlet</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/enkafan/Cake.Figlet/master/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Copyright (c) Phil Scott 2016</copyright>
+    <releaseNotes>Initial Release</releaseNotes>
+    <tags>Cake Script Build Figlet</tags>
+    <dependencies>
+      <dependency id="Cake.Core" version="0.14.0" />
+    </dependencies>
+  </metadata>
+
+  <files>
+    <file src="./src/Cake.Figlet/bin/Release/Cake.Figlet.dll" target="lib/net45" />
+    <file src="./src/Cake.Figlet/bin/Release/Cake.Figlet.xml" target="lib/net45" />
+  </files>
+</package>
