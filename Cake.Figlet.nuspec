@@ -21,7 +21,7 @@
   </metadata>
 
   <files>
-    <file src="./src/Cake.Figlet/bin/Release/Cake.Figlet.dll" target="lib/net45" />
-    <file src="./src/Cake.Figlet/bin/Release/Cake.Figlet.xml" target="lib/net45" />
+    <file src="src/Cake.Figlet/bin/Release/Cake.Figlet.dll" target="lib/net45" />
+    <file src="src/Cake.Figlet/bin/Release/Cake.Figlet.xml" target="lib/net45" />
   </files>
 </package>

@@ -1,6 +1,7 @@
 #tool "nuget:?package=GitVersion.CommandLine"
 #tool "xunit.runner.console"
 
+
 var target = Argument<string>("target", "build");
 var configuration = Argument<string>("configuration", "Release");
 
@@ -16,6 +17,10 @@ var testResultsPath = MakeAbsolute(Directory(artifacts + "./test-results"));
 
 var nugetVersion = "";
 var semVer = "";
+
+Setup(context => {
+//    Information(Figlet("Cake.Figlet"));
+});
 
 Task("clean")
     .Does(() => 
