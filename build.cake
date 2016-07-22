@@ -97,6 +97,7 @@ Task("push-to-nuget")
 
     NuGetPush(newestNupkg, new NuGetPushSettings { 
         Verbosity = NuGetVerbosity.Detailed,
+        Source = "https://www.nuget.org/api/v2/package",
         ApiKey = apiKey
     });
 });
