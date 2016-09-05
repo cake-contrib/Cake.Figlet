@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+﻿using System;
 using Shouldly;
 using Xunit;
 
@@ -9,8 +9,7 @@ namespace Cake.Figlet.Tests
         [Fact]
         public void Figlet_can_render()
         {
-            var expected =
-                @"
+            const string expected = @"
  _   _        _  _            __        __              _      _ 
 | | | |  ___ | || |  ___      \ \      / /  ___   _ __ | |  __| |
 | |_| | / _ \| || | / _ \      \ \ /\ / /  / _ \ | '__|| | / _` |
@@ -19,15 +18,20 @@ namespace Cake.Figlet.Tests
                           |/                                     
 ";
             FigletAliases.Figlet(null, "Hello, World").ShouldBeWithLeadingLineBreak(expected);
-            Debug.WriteLine(FigletAliases.Figlet(null, "FIG"));
         }
     }
 
     public static class ShouldlyAsciiExtensions
     {
+        /// <summary>
+        /// Helper to allow the expected ASCII art to be on it's own line when declaring
+        /// the expected value in the source code
+        /// </summary>
+        /// <param name="input">The input.</param>
+        /// <param name="expected">The expected.</param>
         public static void ShouldBeWithLeadingLineBreak(this string input, string expected)
         {
-            ("\r\n" + input).ShouldBe(expected);
+            (Environment.NewLine + input).ShouldBe(expected);
         }
     }
 }
