@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Reflection;
 
 namespace Cake.Figlet
 {
@@ -8,7 +9,7 @@ namespace Cake.Figlet
     {
         public static Stream GetResourceStream(this object obj, string resourceName)
         {
-            var assem = obj.GetType().Assembly;
+            var assem = obj.GetType().GetTypeInfo().Assembly;
             return assem.GetManifestResourceStream(resourceName);
         }
 
