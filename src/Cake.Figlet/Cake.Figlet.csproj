@@ -1,6 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netstandard1.6;net45</TargetFrameworks>
+    <Authors>Phil Scott</Authors>
+    <Company />
+    <PackageLicenseUrl>https://raw.githubusercontent.com/enkafan/Cake.Figlet/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/enkafan/Cake.Figlet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/enkafan/Cake.Figlet</RepositoryUrl>
+    <PackageTags>Cake Script Build Figlet</PackageTags>
+    <Description>Cake Build addon to provide Ascii art.</Description>
+    <PackageIconUrl>https://cdn.rawgit.com/cake-contrib/graphics/a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png</PackageIconUrl>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="standard.flf" />
