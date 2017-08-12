@@ -7,7 +7,7 @@ build_script:
   - cmd: powershell -NoProfile -ExecutionPolicy unrestricted -Command .\build.ps1 -Target "appveyor"
 
 # Test settings
-test: on
+test: off
 
 # Branches whitelist
 branches:
