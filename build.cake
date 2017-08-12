@@ -24,7 +24,7 @@ Setup(context => {
 });
 
 Task("clean")
-    .Does(() => 
+    .Does(() =>
 {
     CleanDirectories("./build");
     CleanDirectories("./**/bin");
@@ -40,11 +40,12 @@ Task("set-version")
     });
 
 	semVer = version.SemVer;
+	nugetVersion = version.NuGetVersionV2;
 
-    ReplaceProperty("Version", version.SemVer);
+    ReplaceProperty("Version", nugetVersion);
     ReplaceProperty("Product", projectName);
     ReplaceProperty("Description", projectName);
-    ReplaceProperty("Company", "Ticket Solutions");
+    ReplaceProperty("Company", "Cake.Figlet");
     ReplaceProperty("Copyright", "Copyright (c) " + DateTime.Now.Year);
 
 	Information("Nuget Version: " + nugetVersion);
@@ -63,7 +64,7 @@ Task("build")
     .IsDependentOn("set-version")
     .IsDependentOn("clean")
 	.IsDependentOn("__RestoreNugetPackages")
-.Does(() => 
+.Does(() =>
 {
 	DotNetCoreBuild(solutionPath, new DotNetCoreBuildSettings {
         Configuration = configuration,
@@ -90,7 +91,7 @@ Task("test")
 
 Task("package")
 	.IsDependentOn("test")
-    .Does(() => 
+    .Does(() =>
 {
     CreateDirectory("./nupkg/");
 
@@ -119,7 +120,7 @@ Task("push-to-nuget")
 
     var apiKey = EnvironmentVariable("NUGET_API_KEY");
 
-    NuGetPush(newestNupkg, new NuGetPushSettings { 
+    NuGetPush(newestNupkg, new NuGetPushSettings {
         Verbosity = NuGetVerbosity.Detailed,
         Source = "https://www.nuget.org/api/v2/package",
         ApiKey = apiKey
