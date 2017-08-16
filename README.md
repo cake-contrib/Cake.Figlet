@@ -42,5 +42,5 @@ Executing custom setup action...
 
 ## Thanks
 
-Figlet code is based heavilty from [Philippe Auriou's FIGlet library](https://github.com/auriou/FIGlet)
+Figlet code is based heavily from [Philippe Auriou's FIGlet library](https://github.com/auriou/FIGlet)
 
