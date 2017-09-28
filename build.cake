@@ -32,6 +32,18 @@ Task("clean")
     CreateDirectory("./build");
 });
 
+Task("get-version")
+    .Does(() =>
+{
+    var version = GitVersion(new GitVersionSettings());
+
+    semVer = version.SemVer;
+    nugetVersion = version.NuGetVersionV2;
+
+    Information("SemVer: " + semVer);
+    Information("NuGet: " + nugetVersion);
+});
+
 Task("set-version")
     .Does(() =>
 {
