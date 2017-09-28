@@ -1,6 +1,6 @@
 #tool "nuget:?package=GitVersion.CommandLine"
 #tool "xunit.runner.console"
-
+#addin "Cake.Figlet"
 
 var target = Argument<string>("target", "build");
 var configuration = Argument<string>("configuration", "Release");
@@ -20,7 +20,7 @@ var nugetVersion = "";
 var semVer = "";
 
 Setup(context => {
-//    Information(Figlet("Cake.Figlet"));
+    Information(Figlet("Cake.Figlet"));
 });
 
 Task("clean")
