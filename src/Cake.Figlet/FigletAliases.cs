@@ -46,6 +46,7 @@ namespace Cake.Figlet
         /// <param name="text">The text to render as ASCII Art.</param>
         /// <param name="fontFile">The Figlet font format file.</param>
         /// <returns>A string containing the ASCII art.</returns>
+        [CakeMethodAlias]
         public static string Figlet(this ICakeContext context, string text, FilePath fontFile)
         {
             var figlet = new Figlet(fontFile.FullPath);
