@@ -2,7 +2,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <id>Cake.Figlet</id>
-    <version>$version$</version>
+    <version>0.0.0</version>
     <authors>Phil Scott</authors>
     <owners>Phil Scott</owners>
     <title>Cake.Figlet</title>
@@ -21,7 +21,7 @@
   </metadata>
 
   <files>
-    <file src="src/Cake.Figlet/bin/Release/Cake.Figlet.dll" target="lib/net45" />
-    <file src="src/Cake.Figlet/bin/Release/Cake.Figlet.xml" target="lib/net45" />
+    <file src="netstandard2.0\Cake.Figlet.dll" target="lib\net45" />
+    <file src="netstandard2.0\Cake.Figlet.pdb" target="lib\net45" />
   </files>
 </package>

@@ -1,16 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Figlet", "src\Cake.Figlet\Cake.Figlet.csproj", "{B21F3DE6-636C-4EE7-A71F-A24F2034F0B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cake.Figlet", "Cake.Figlet\Cake.Figlet.csproj", "{B21F3DE6-636C-4EE7-A71F-A24F2034F0B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Figlet.Tests", "tests\Cake.Figlet.Tests\Cake.Figlet.Tests.csproj", "{811AA832-B809-45DC-8FFD-ABE455872658}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cake.Figlet.Tests", "Cake.Figlet.Tests\Cake.Figlet.Tests.csproj", "{811AA832-B809-45DC-8FFD-ABE455872658}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{675AE6B0-8DFC-4033-899A-190B177EF712}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{B0EB6B77-6116-4FF5-B71B-6587BFB4B1F9}"
 	ProjectSection(SolutionItems) = preProject
-		build.cake = build.cake
-		Cake.Figlet.nuspec = Cake.Figlet.nuspec
+		..\setup.cake = ..\setup.cake
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspec", "nuspec", "{A63B599C-492D-44CE-8FAD-30A87A4ED1C6}"
+	ProjectSection(SolutionItems) = preProject
+		..\nuspec\nuget\Cake.Figlet.nuspec = ..\nuspec\nuget\Cake.Figlet.nuspec
 	EndProjectSection
 EndProject
 Global
@@ -30,5 +34,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A63B599C-492D-44CE-8FAD-30A87A4ED1C6} = {B0EB6B77-6116-4FF5-B71B-6587BFB4B1F9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5786BE1D-BAC0-4998-9EF9-9AD20AB06476}
 	EndGlobalSection
 EndGlobal
