@@ -17,6 +17,6 @@
     <EmbeddedResource Include="standard.flf" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Cake.Core" Version="0.26.0" />
+    <PackageReference Include="Cake.Core" Version="0.28.0" />
   </ItemGroup>
 </Project>
