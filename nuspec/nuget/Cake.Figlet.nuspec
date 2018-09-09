@@ -15,9 +15,6 @@
     <copyright>Copyright (c) Phil Scott 2016</copyright>
     <releaseNotes>Bumps minimum supported Cake to v0.17</releaseNotes>
     <tags>Cake Script Build Figlet</tags>
-    <dependencies>
-      <dependency id="Cake.Core" version="0.17.0" />
-    </dependencies>
   </metadata>
 
   <files>
