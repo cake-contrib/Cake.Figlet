@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>Cake.Figlet</id>
+    <title>Cake.Figlet</title>
+    <version>0.0.0</version>
+    <authors>Phil Scott</authors>
+    <owners>enkafan cake-contrib</owners>
+    <summary>Cake Build addon to provide Ascii art.</summary>
+    <description>Cake Build addon to provide Ascii art.</description>
+    <licenseUrl>https://raw.githubusercontent.com/cake-contrib/Cake.Figlet/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/cake-contrib/Cake.Figlet</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/cake-contrib/graphics/a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <repository type="git" url="https://github.com/cake-contrib/Cake.Figlet"/>
+    <copyright>Copyright (c) Phil Scott 2016</copyright>
+    <tags>Cake Script Build Figlet</tags>
+  </metadata>
+
+  <files>
+    <file src="netstandard2.0\Cake.Figlet.dll" target="lib\netstandard2.0" />
+    <file src="netstandard2.0\Cake.Figlet.xml" target="lib\netstandard2.0" />
+    <file src="netstandard2.0\Cake.Figlet.pdb" target="lib\netstandard2.0" />
+  </files>
+</package>

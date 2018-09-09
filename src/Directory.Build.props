@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><!-- The new msbuild allows you to set properties in this file that will be inherited by all projects -->
+<!-- see: http://blog.seravy.com/directory-build-targets-solution-wide-msbuild-target-part-2/ -->
+<Project>
+  <!-- These properties will be shared for all projects -->
+  <PropertyGroup>
+    <Product>Cake.Figlet</Product>
+    <Authors>Phil Scott</Authors>
+    <Copyright>Copyright (c) Phil Scott 2016</Copyright>
+    <Company />
+  </PropertyGroup>
+
+  <!-- Treat warnings as errors for all projects -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <TreatSpecificWarningsAsErrors />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <TreatSpecificWarningsAsErrors />
+  </PropertyGroup>
+</Project>

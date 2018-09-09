@@ -1,0 +1,36 @@
+#---------------------------------#
+#  Initialization                 #
+#---------------------------------#
+init:
+  - git config --global core.autocrlf true
+
+#---------------------------------#
+#  Build Image                    #
+#---------------------------------#
+image: Visual Studio 2017
+
+#---------------------------------#
+#  Build Script                   #
+#---------------------------------#
+build_script:
+  - ps: .\build.ps1 -Target AppVeyor
+
+# Tests
+test: off
+
+#---------------------------------#
+#  Branches to build              #
+#---------------------------------#
+branches:
+  # Whitelist
+  only:
+    - develop
+    - master
+    - /release/.*/
+    - /hotfix/.*/
+
+#---------------------------------#
+#  Build Cache                    #
+#---------------------------------#
+cache:
+- tools -> setup.cake
