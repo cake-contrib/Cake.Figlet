@@ -21,7 +21,7 @@
   </metadata>
 
   <files>
-    <file src="netstandard2.0\Cake.Figlet.dll" target="lib\net45" />
-    <file src="netstandard2.0\Cake.Figlet.pdb" target="lib\net45" />
+    <file src="netstandard2.0\Cake.Figlet.dll" target="lib\netstandard2.0" />
+    <file src="netstandard2.0\Cake.Figlet.pdb" target="lib\netstandard2.0" />
   </files>
 </package>
