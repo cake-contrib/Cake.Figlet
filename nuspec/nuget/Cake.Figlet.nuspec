@@ -10,9 +10,9 @@
     <description>Cake Build addon to provide Ascii art.</description>
     <licenseUrl>https://raw.githubusercontent.com/cake-contrib/Cake.Figlet/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/cake-contrib/Cake.Figlet</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/cake-contrib/graphics/a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics/png/cake-contrib-medium.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <repository type="git" url="https://github.com/cake-contrib/Cake.Figlet"/>
+    <repository type="git" url="https://github.com/cake-contrib/Cake.Figlet" />
     <copyright>Copyright (c) Phil Scott 2016</copyright>
     <tags>Cake Script Build Figlet</tags>
   </metadata>
