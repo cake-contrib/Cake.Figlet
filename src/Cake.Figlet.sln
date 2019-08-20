@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cake.Figlet.Tests", "Cake.F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{B0EB6B77-6116-4FF5-B71B-6587BFB4B1F9}"
 	ProjectSection(SolutionItems) = preProject
-		..\setup.cake = ..\setup.cake
+		..\recipe.cake = ..\recipe.cake
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspec", "nuspec", "{A63B599C-492D-44CE-8FAD-30A87A4ED1C6}"

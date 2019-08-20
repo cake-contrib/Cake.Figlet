@@ -8,14 +8,14 @@
     <owners>enkafan cake-contrib</owners>
     <summary>Cake Build addon to provide Ascii art.</summary>
     <description>Cake Build addon to provide Ascii art.</description>
-    <licenseUrl>https://raw.githubusercontent.com/cake-contrib/Cake.Figlet/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/cake-contrib/Cake.Figlet</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics/png/cake-contrib-medium.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <repository type="git" url="https://github.com/cake-contrib/Cake.Figlet"/>
+    <repository type="git" url="https://github.com/cake-contrib/Cake.Figlet.git"/>
+    <license type="expression">MIT</license>
     <copyright>Copyright (c) Phil Scott 2016</copyright>
     <tags>Cake Script Build Figlet</tags>
-  
+
 </metadata>
 
   <files>
