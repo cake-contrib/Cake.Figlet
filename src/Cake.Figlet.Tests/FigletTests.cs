@@ -31,7 +31,7 @@ namespace Cake.Figlet.Tests
         /// <param name="expected">The expected.</param>
         public static void ShouldBeWithLeadingLineBreak(this string input, string expected)
         {
-            (Environment.NewLine + input).ShouldBe(expected);
+            (Environment.NewLine + input).ShouldBe(expected, StringCompareShould.IgnoreLineEndings);
         }
     }
 }
