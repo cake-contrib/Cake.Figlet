@@ -11,7 +11,8 @@ BuildParameters.SetParameters(
     repositoryName: "Cake.Figlet",
     appVeyorAccountName: "cakecontrib",
     preferredBuildProviderType: BuildProviderType.GitHubActions,
-    shouldRunDotNetCorePack: true);
+    shouldRunDotNetCorePack: true,
+    shouldGenerateDocumentation: false);
 
 BuildParameters.PrintParameters(Context);
 
