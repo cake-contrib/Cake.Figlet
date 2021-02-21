@@ -258,5 +258,6 @@ paket-files/
 .idea/
 *.sln.iml
 
-# Project specific 
+# Project specific
 BuildArtifacts/
+.DS_Store
