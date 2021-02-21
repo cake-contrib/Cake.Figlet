@@ -9,7 +9,8 @@ BuildParameters.SetParameters(
     title: "Cake.Figlet",
     repositoryOwner: "cake-contrib",
     repositoryName: "Cake.Figlet",
-    appVeyorAccountName: "cakecontrib");
+    appVeyorAccountName: "cakecontrib",
+    shouldRunDotNetCorePack: true);
 
 BuildParameters.PrintParameters(Context);
 
