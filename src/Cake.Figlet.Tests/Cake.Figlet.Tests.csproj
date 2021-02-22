@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp2.1;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>net50;netcoreapp2.1;netcoreapp3.1</TargetFrameworks>
     <RuntimeFrameworkVersion>2.0.3</RuntimeFrameworkVersion>
     <Description>Test cases for the Cake.Figlet addin.</Description>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Cake.Core" Version="0.33.0" />
+    <PackageReference Include="Cake.Core" Version="1.0.0" />
     <PackageReference Include="coverlet.msbuild" Version="3.0.3">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
