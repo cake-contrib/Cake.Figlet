@@ -20,7 +20,7 @@
       <PackageIconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics/png/cake-contrib-medium.png</PackageIconUrl>
       <PackageLicenseExpression>MIT</PackageLicenseExpression>
       <PackageProjectUrl>https://github.com/cake-contrib/Cake.Figlet</PackageProjectUrl>
-      <PackageTags>Cake;Script;Build;Figlet</PackageTags>
+      <PackageTags>cake;script;build;figlet;cake-addin</PackageTags>
       <RepositoryUrl>https://github.com/cake-contrib/Cake.Figlet.git</RepositoryUrl>
       <PackageReleaseNotes>https://github.com/cake-contrib/Cake.Figlet/releases/tag/$(Version)</PackageReleaseNotes>
   </PropertyGroup>
